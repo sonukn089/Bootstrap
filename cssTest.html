@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Test</title>
+	<style type="text/css">
+		.common {
+			background-color: #07770c;
+			height: 350px;
+			width: 700px;
+			border-radius: 700px 0px 700px 0px;
+			position: absolute;
+			border: 1px solid #FFF;
+			margin-left: 400px;
+			margin-top: 250px;
+			opacity: 0.2;
+
+		}
+		.layer_1 {
+			transform: rotate(15deg);
+		}
+		.layer_2 {
+			transform: rotate(30deg);
+		}
+		.layer_3 {
+			transform: rotate(45deg);
+		}
+		.layer_4 {
+			transform: rotate(60deg);
+		}
+		.layer_5 {
+			transform: rotate(75deg);
+		}
+		.layer_6 {
+			transform: rotate(90deg);
+		}
+		.layer_7 {
+			transform: rotate(105deg);
+		}
+		.layer_8 {
+			transform: rotate(120deg);
+		}
+		.layer_9 {
+			transform: rotate(135deg);
+		}
+		.layer_10 {
+			transform: rotate(150deg);
+		}
+		.layer_11 {
+			transform: rotate(165deg);
+		}
+		.layer_12 {
+			transform: rotate(180deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="layer_1 common"></div>
+	<div class="layer_2 common"></div>
+	<div class="layer_3 common"></div>
+	<div class="layer_4 common"></div>
+	<div class="layer_5 common"></div>
+	<div class="layer_6 common"></div>
+	<div class="layer_7 common"></div>
+	<div class="layer_8 common"></div>
+	<div class="layer_9 common"></div>
+	<div class="layer_10 common"></div>
+	<div class="layer_11 common"></div>
+	<div class="layer_12 common"></div>
+	<script type="text/javascript">
+		function makeid() {
+		  var text = "";
+		  var possible = "AB0123456789";
+		  for (var i = 0; i < 6; i++)
+
+		    text += possible.charAt(Math.floor(Math.random() * possible.length));
+		  		return text;
+		}
+
+		function changeColor(coll, color){
+
+		    for(var i = 0, len = coll.length; i < coll.length; i++){
+		        coll[i].style["background-color"] = color;
+		    }
+		}
+		setInterval(function(){
+
+			var aColl = document.getElementsByClassName('common'); 
+			changeColor(aColl, `#${makeid()}`)
+		}, 300);
+
+	</script>
+	
+</body>
+</html>
