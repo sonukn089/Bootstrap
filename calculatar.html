@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+<table width="20%" style="border:  1px black solid; text-align: center;" align="center" >
+	<tr>
+		<td >
+			<h1 style="color: blue;">-- Calculator --</h1>
+
+	<table style="text-align: center; ">
+		<tr>
+			<td colspan="8">
+				<span id="ans" style="width: 515px; height: 50px; margin-right: 2px;text-align: right;font-size: 13px;"></span>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="8">
+				<input type="text" id="textbox"  style="width: 515px; height: 50px; margin-right: 2px;text-align: right;font-size: 30px;" value="0">
+			</td>
+		</tr>
+		<tr>
+			<td ><button style=" height: 50px; width: 70px;">Red</button></td>
+			<td><button style=" height: 50px; width: 70px;" > # </button></td>
+			<td><button style=" height: 50px; width: 70px;">X!</button></td>
+			<td><button style="height: 50px; width: 70px;">(</button></td>
+			<td><button style=" height: 50px; width: 70px;">)</button></td>
+			<td>
+				<button style=" height: 50px; width: 70px;" value="%" onclick="numberString(this.value)">%</button>
+			</td>
+			<td><button style=" height: 50px; width: 70px;">AC</button></td>
+		</tr>
+		<tr>
+			<td><button style=" height: 50px; width: 70px;">Inv</button></td>
+			<td><button style=" height: 50px; width: 70px;">sin</button></td>
+			<td><button style=" height: 50px; width: 70px;">In</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="7" onclick="numberString(this.value)">7</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="8" onclick="numberString(this.value)">8</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="9" onclick="numberString(this.value)">9</button></td>
+			<td><button style=" height: 50px; width: 70px;" onclick="numberString(this.innerHTML)">/</button></td>
+		</tr>	
+		<tr>
+			<td><button style=" height: 50px; width: 70px;">TT</button></td>
+			<td><button style=" height: 50px; width: 70px;">cos</button></td>
+			<td><button style=" height: 50px; width: 70px;">log</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="4" onclick="numberString(this.value)">4</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="5" onclick="numberString(this.value)">5</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="6" onclick="numberString(this.value)">6</button></td>
+			<td><button style=" height: 50px; width: 70px;" onclick="numberString(this.innerHTML)">*</button></td>
+		</tr>
+		<tr>
+			<td><button style=" height: 50px; width: 70px;">e</button></td>
+			<td><button style=" height: 50px; width: 70px;">tan</button></td>
+			<td><button style=" height: 50px; width: 70px;">root</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="1" onclick="numberString(this.value)">1</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="2" onclick="numberString(this.value)">2</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="3" onclick="numberString(this.value)">3</button></td>
+			<td><button style="  height: 50px; width: 70px;" value="-" onclick="numberString(this.innerHTML)">-</button></td>
+		</tr>
+		<tr>
+			<td><button style=" height: 50px; width: 70px;">Ans</button></td>
+			<td><button style=" height: 50px; width: 70px;">EXP</button></td>
+			<td><button style=" height: 50px; width: 70px;">xy</button></td>
+			<td><button style=" height: 50px; width: 70px;" value="0" onclick="numberString(this.value)">0</button></td>
+			<td><button style=" height: 50px; width: 70px;"></button></td>
+			<td><button style=" height: 50px; width: 70px;" value="+" onclick="numberString(this.value)">+</button></td>			<td><button style=" height: 50px; width: 70px; background: lightblue; font-weight: bold;" value="=" onclick="answer(this.value)">=</button></td>
+
+		</tr>	
+	</table>	
+		</td>
+
+	</tr>
+	
+</table>
+<script type="text/javascript">
+
+	function operationAirthmatic(val) {
+		alert(val)
+	}
+	function numberString(val) {
+		let textboxElement = document.getElementById("textbox");
+		let textString = ''
+
+		if(textboxElement.value == '0')
+			textboxElement.value = ''
+
+		textString = textboxElement.value + val
+		textboxElement.value = textString
+	}
+	function answer(val) {
+		let operation
+		let value
+		let txt = document.getElementById("textbox").value;
+		if(txt.indexOf('-') > -1){
+			value = txt.split('-')
+			document.getElementById("textbox").value = parseInt(value[0]) - parseInt(value[1])
+		}
+		if(txt.indexOf('+') > -1){
+			value = txt.split('+')
+			document.getElementById("textbox").value = parseInt(value[0]) + parseInt(value[1])
+		}
+		if(txt.indexOf('*') > -1){
+			value = txt.split('*')
+			document.getElementById("textbox").value = parseInt(value[0]) * parseInt(value[1])
+		}
+		if(txt.indexOf('/') > -1){
+			value = txt.split('/')
+			document.getElementById("textbox").value = parseInt(value[0]) / parseInt(value[1])
+		}
+		if(txt.indexOf('%') > -1){
+			value = txt.split('%')
+			document.getElementById("textbox").value = parseInt(value[0]) % parseInt(value[1])
+		}
+
+	}
+</script>
+</body>
+</html>
