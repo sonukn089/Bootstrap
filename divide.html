@@ -15,6 +15,10 @@
 		<h1>My First Bootstrap Page</h1>
 		<p>Resize this responsive page to see the effect!</p>
  	</div>
+    <!-- xs (for phones - screens less than 768px wide) -->
+    <!-- sm (for tablets - screens equal to or greater than 768px wide) -->
+    <!-- md (for small laptops - screens equal to or greater than 992px wide) -->
+    <!-- lg (for laptops and desktops - screens equal to or greater than 1200px wide) -->
  	<div class="container" style="background-color: lightblue;">
 		<div class="row">
 			<div class="col-sm-3">
@@ -142,6 +146,7 @@
 	<div class="container">
 		<h2>Contextual Colors</h2>
 		<p>Use the contextual classes to provide "meaning through colors":</p>
+        <!-- The classes for text colors are:.text-muted, .text-primary, .text-success, .text-info, .text-warning, and .text-danger -->
 		<p class="text-muted">This text is muted.</p>
 		<p class="text-primary">This text is important.</p>
 		<p class="text-success">This text indicates success.</p>
@@ -152,6 +157,7 @@
 	<div class="container">
 		<h1>Contextual Backgrounds</h1>
 		<p>Use the contextual background classes to provide "meaning through colors":</p>
+        <!-- The classes for background colors are:.bg-primary, .bg-success, .bg-info, .bg-warning, and .bg-danger -->
 		<p class="bg-primary">This text is important.</p>
 		<p class="bg-success">This text indicates success.</p>
 		<p class="bg-info">This text represents some information.</p>
@@ -624,6 +630,7 @@ The following example creates a responsive video by adding an .embed-responsive-
 	</div>
 	<div class="container">
 		<h2>Alerts</h2>
+        <!-- Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-dange --> 
 		<div class="alert alert-success">
 			<strong>Success!</strong>
 			This alert box could indicate a successful or positive action.
@@ -644,14 +651,71 @@ The following example creates a responsive video by adding an .embed-responsive-
 	<div class="container">
 		<h2>Alert Links</h2>
         <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+        <!-- Add the alert-link class to any links inside the alert box to create "matching colored links": -->
         <div class="alert alert-success">
         	<strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
         </div>
         <div class="alert alert-info">
         	<strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
         </div>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        </div>
+
         <!-- this is only tst of new branch. -->
 	</div>
+    <div class="container">
+        <h2>Alerts</h2>
+        <p>The a element with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+        <p>The alert-dismissible class adds some extra padding to the close button.</p>
+        <!-- To close the alert message, add a .alert-dismissable class to the alert container. Then add class="close" and data-dismiss="alert" to a link or a button element (when you click on this the alert box will disappear). -->
+        <div class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">x</a>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">x</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">x</a>
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">x</a>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+
+    </div>
+    <div class="container">
+        <h2>Animated Alerts</h2>
+        <p>The .fade and .in classes adds a fading effect when closing the alert message.</p>
+        <!-- The .fade and .in classes adds a fading effect when closing the alert message: -->
+        <div class="alert alert-success alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">&times;</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-info alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">&times;</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">&times;</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-danger alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" arial-lable="close">&times;</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+    </div>
+    <div>
+        
+    </div>
+
+	
 
 
 
