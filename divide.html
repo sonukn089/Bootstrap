@@ -1009,7 +1009,52 @@ The following example creates a responsive video by adding an .embed-responsive-
         <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
             Danger
         </div>
-    </div>    
+    </div>  
+
+    <!-- Basic Pagination
+    If you have a web site with lots of pages, you may wish to add some sort of pagination to each page. A basic pagination in Bootstrap looks like this: -->
+
+    <div class="container">
+        <!-- To create a basic pagination, add the .pagination class to an <ul> element: -->
+        <h2>Pagination</h2>
+        <p>The .pagination class provides pagination links:</p>
+        <ul class="pagination"> 
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+        </ul>
+    </div>  
+    <!-- Active State The active state shows what is the current page: -->
+    <div class="container">
+        <!-- Add class .active to let the user know which page he/she is on: -->
+        <h2>Pagination - Active State</h2>
+        <p>Add class .active to let the user know which page he/she is on:</p>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="active"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+        </ul>
+    </div>
+    <!-- Disabled State A disabled link cannot be clicked: -->
+    <div class="container">
+        <!-- Add class .disabled if a link for some reason is disabled: -->
+        <h2>Pagination - Disabled State</h2>
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="disabled"><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+    </div>
+    
 
 	
 </body>
