@@ -1330,9 +1330,20 @@ The following example creates a responsive video by adding an .embed-responsive-
               </ul>
           </div>
       </div>
-      <div>
-          <h2>Heading</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <!-- Disable and Active items -->
+      <div class="">
+          <h2>Dropdowns</h2>
+          <p>The .active class adds a blue background color to the active link.</p>
+          <p>The .disabled class disables a dropdown item (grey text color).</p>
+          <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Normal</a></li>
+                  <li class="disabled"><a href="#">Disabled</a></li>
+                  <li class="active"><a href="#">Active</a></li>
+                  <li><a href="#">Normal</a></li>
+              </ul>
+          </div>
       </div>
 
 
