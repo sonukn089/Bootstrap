@@ -1361,7 +1361,43 @@ The following example creates a responsive video by adding an .embed-responsive-
               </ul>
           </div>
       </div>
-      
+      <!-- Dropup -->
+      <!-- If you want the dropdown menu to expand upwards instead of downwards, change the <div> element with class="dropdown" to "dropup": -->
+       <div class="container">
+            <h2>Dropdowns</h2>
+            <p>The .dropup class makes the dropdown menu expand upwards instead of downwards:</p>
+            <div class="dropup">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Dropdown Accessibility -->
+        <!-- To help improve accessibility for people using screen readers, you should include the following role and aria-* attributes, when creating a dropdown menu: -->
+        <div class="container">
+             <h2>Dropdowns</h2>
+             <p>The .dropdown class is used to indicate a dropdown menu.</p>
+             <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+             <div class="dropdown">
+                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials<span class="caret"></span></button>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                     <li role="presentation" class="divider"></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                 </ul>
+             </div>
+        </div>
+        
+
+ 
+
 
 
 
