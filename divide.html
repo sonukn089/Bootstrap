@@ -1618,7 +1618,39 @@ The following example creates a responsive video by adding an .embed-responsive-
                 <li><a href="#">Menu 3</a></li>
             </ul>
         </div>
+        <!-- Centered Tabs and Pills -->
+        <!-- To center/justify the tabs and pills, use the .nav-justified class. -->
+        <!-- Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered): -->
 
+        <div class="container">
+            <h3>Centered Tabs</h3>
+            <p>To center/justify the tabs and pills, use the .nav-justified class. Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered).</p>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <br>
+            <h3>Centered Pills</h3>
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+        <!--To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a <div> element with class .tab-content. If you want the tabs to fade in and out when clicking on them, add the .fade class to .tab-pane: -->
+        <div class="container">
+            <h2>Dynamic Tabs</h2>
+            <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#menu1" data-toggle="tab">Menu 1</a></li>
+                <li><a href="#menu1" data-toggle="tab">Menu 2</a></li>
+                <li><a href="#menu1" data-toggle="tab">Menu 3</a></li>
+            </ul>
+        </div>    
 
 
  
