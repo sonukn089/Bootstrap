@@ -1699,7 +1699,7 @@ The following example creates a responsive video by adding an .embed-responsive-
                 </div>
             </div>
         </div>
-        <!-- Navigation Bars A navigation bar is a navigation header that is placed at the top of the page: -->
+        <!-- Navigation Bars A navigation bar is a navigation header that is placed at the top of the page: A standard navigation bar is created with <nav class="navbar navbar-default">. -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -1717,7 +1717,22 @@ The following example creates a responsive video by adding an .embed-responsive-
             <h3>Basic Navbar Example</h3>
             <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
         </div>
-
+        <!-- Note: All of the examples on this page will show a navigation bar that takes up too much space on small screens (however, the navigation bar will be on one single line on large screens - because Bootstrap is responsive). This problem (with the small screens) will be solved in the last example on this page. -->
+        <!-- Inverted Navigation Bar If you don't like the style of the default navigation bar, Bootstrap provides an alternative, black navbar: -->
+        <!-- Just change the .navbar-default class into .navbar-inverse: -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </nav>
  
 
 
