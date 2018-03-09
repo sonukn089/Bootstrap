@@ -583,8 +583,8 @@
     	<h2>Responsive Embed</h2>
   		<p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
   		<!--Also let videos or slideshows scale properly on any device.
-Classes can be applied directly to <iframe>, <embed>, <video>, and <object> elements.
-The following example creates a responsive video by adding an .embed-responsive-item class to an <iframe> tag (the video will then scale nicely to the parent element). The containing <div> defines the aspect ratio of the video:  -->
+        Classes can be applied directly to <iframe>, <embed>, <video>, and <object> elements.
+        The following example creates a responsive video by adding an .embed-responsive-item class to an <iframe> tag (the video will then scale nicely to the parent element). The containing <div> defines the aspect ratio of the video:  -->
   		<div class="embed-responsive embed-responsive-16by9">
   			<iframe src="https://www.youtube.com/embed/XGSy3_Czz8k" class="embed-responsive-item"></iframe>
   		</div>
@@ -1811,6 +1811,30 @@ The following example creates a responsive video by adding an .embed-responsive-
         <div class="container">
             <h2>Navbar Button</h2>
             <p>Use the navbar-btn class on a button to vertically align (same padding as links) it inside the navbar.</p>
+        </div>
+        <!-- Navbar Forms -->
+        <!-- To add form elements inside the navbar, add the .navbar-form class to a form element and add an input(s). Note that we have added a .form-group class to the div container holding the input. This adds proper padding if you have more than one inputs (you will learn more about this in the Forms chapter). -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </nav> 
+        <div class="container">
+            <h3>Navbar Forms</h3>
+            <p>Use the .navbar-form class to vertically align form elements (same padding as links) inside the navbar.</p>
         </div>
 
 
